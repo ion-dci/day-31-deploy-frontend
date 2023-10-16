@@ -13,10 +13,8 @@ export function Search() {
     // for production, you would need the full URL; you would also need CORS
     axios
       .get(`${process.env.REACT_APP_URL_BE}/api/guitars/searchByBrand?searchParam=${searchParam}`)
-      .then((response) => {
-        
+      .then((response) => { 
         setResults(response.data);
-        console.log(response)
       });
   };
 
