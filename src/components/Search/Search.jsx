@@ -14,7 +14,9 @@ export function Search() {
     axios
       .get(`${process.env.REACT_APP_URL_BE}/api/guitars/searchByBrand?searchParam=${searchParam}&limit=12&skip=24`)
       .then((response) => {
+        
         setResults(response.data);
+        console.log(results)
       });
   };
 
