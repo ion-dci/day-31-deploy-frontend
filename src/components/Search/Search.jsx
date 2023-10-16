@@ -8,7 +8,7 @@ export function Search() {
   const [skip, setSkip] = useState(0);
 
   const limit = 12;
-
+console.log(import.meta.env.VITE_URL_BE)
   const searchHandler = () => {
     // this URL will only work in production!
     // for production, you would need the full URL; you would also need CORS
