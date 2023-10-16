@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.guitar {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  display: inline-block;
+  background-color: yellow;
+  border-radius: 3px;
+}
