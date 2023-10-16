@@ -16,7 +16,7 @@ export function Search() {
       .then((response) => {
         
         setResults(response.data);
-        console.log(results)
+        console.log(response)
       });
   };
 
