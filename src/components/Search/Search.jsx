@@ -13,7 +13,7 @@ console.log(import.meta.env.VITE_URL_BE)
     // this URL will only work in production!
     // for production, you would need the full URL; you would also need CORS
     axios
-      .get(`${import.meta.env.VITE_URL_BE}/api/guitars/searchByBrand?searchParam=${searchParam}&limit=12&skip=24`)
+      .get(`${process.env.VITE_URL_BE}/api/guitars/searchByBrand?searchParam=${searchParam}&limit=12&skip=24`)
       .then((response) => {
         setResults(response.data);
       });
