@@ -12,7 +12,7 @@ export function Search() {
     // this URL will only work in production!
     // for production, you would need the full URL; you would also need CORS
     axios
-      .get(`${process.env.REACT_APP_URL_BE}/api/guitars/searchByBrand?searchParam=${searchParam}&limit=12&skip=24`)
+      .get(`${process.env.REACT_APP_URL_BE}/api/guitars/searchByBrand?searchParam=${searchParam}`)
       .then((response) => {
         
         setResults(response.data);
